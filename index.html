@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="style.css">
+        <title>Application Form</title>
+    </head>
+    <body>
+        <!--header-->
+        <header>
+            <div id="maintitle">
+                <h1>Let's talk</h1>
+                <p>Think you have what it takes? Show us.</p>
+            </div>
+        </header>
+        <!--main body-->
+        <div class="container">
+            <!--section 1-->
+            <div class="sectiontitle">
+                1. Personal Information
+            </div>
+            <div class="line">
+                <input class="sizethree" type="text" name="fullName" placeholder="Full name*"/>
+                <input class="sizeone" type="text" name="phone" placeholder="Phone*"/>
+            </div>
+            <div class="line">
+                <input class="sizethree" type="text" name="email" placeholder="Email*"/>
+            </div>
+            <div class="line">
+                <input class="sizethree" type="text" name="re-enterEmail" placeholder="Re-enter email*"/>
+            </div>
+            <div class="line">
+                <input class="sizefour highline" type="text" name="address" placeholder="Address*"/>
+            </div>
+            <div class="line">
+                <input class="sizefour" type="text" name="address2"/>
+            </div>
+            <div class="line">
+                <input class="sizeone" type="text" name="city" placeholder="City*"/>
+                <input class="sizeone" type="text" name="state" placeholder="State"/>
+                <input class="sizeone" type="text" name="country" placeholder="Country/Region*"/>
+                <input class="sizeone" type="text" name="zip" placeholder="Zip/Postal code"/>
+            </div>
+            <div class="line">
+                <input class="sizefour highline" type="text" name="hearAboutUs" placeholder="How did you hear about us"/>
+            </div>
+        </div>
+        <!--section 2-->
+        <div id="skills">
+            <div class="sectiontitle">
+                2. Skills and location
+            </div>
+            <div>
+                <p class="highline">Which is your primary design discipline?*</p>
+                <div class="box">
+                    <input class="sizeone" type="radio" name="discipline" id="radiodesignResearch" value="designResearch"/>
+                    <label for="radiodesignResearch">Design Research</label>
+                    <input class="sizeone" type="radio" name="discipline" id="radiovisualDesign" value="visualDesign"/>
+                    <label for="radiovisualDesign">Visual Design</label> 
+                    <input class="sizeone" type="radio" name="discipline" id="radiouxDesign" value="uxDesign"/>
+                    <label for="radiouxDesign">UX Design</label> 
+                    <input class="sizeone" type="radio" name="discipline" id="radiofrontEndDev" value="frontEndDev"/>
+                    <label for="radiofrontEndDev">Front-end Dev</label> 
+                </div>
+            </div>
+            <div class="box">
+                <div class="smallbox">
+                    <p>Do you have experience with any other disciplines?</p>
+                    <div class="checkboxholder">
+                        <input class="checkbox" type="checkbox" name="experience" id="visualDesign" value="visualDesign"/>
+                        <label for="visualDesign"> Visual Design</label>
+                    </div>
+                    <div class="checkboxholder">
+                        <input class="checkbox" type="checkbox" name="experience" id="uxDesign" value="uxDesign"/>
+                        <label for="uxDesign"> UX Design</label>
+                    </div>
+                    <div class="checkboxholder">
+                        <input class="checkbox" type="checkbox" name="experience" id="frontEndDevelopment" value="frontEndDevelopment"/>
+                        <label for="frontEndDevelopment"> Front-end Development</label>
+                    </div>
+                </div>
+                <div class="smallbox">
+                    <p>Where are you interested in working?</p>
+                    <p class="subtext">You must be legally authorized to work without visa sponsorship in the location(s) you choose.</p>              
+                    <div class="checkboxholder">
+                        <input class="checkbox sizetwo" type="checkbox" name="location" id="austin" value="austin"/>
+                        <label for="austin">Austin, Texas</label>
+                    </div>
+                    <div class="checkboxholder">
+                        <input class="checkbox sizetwo" type="checkbox" name="location" id="newYork" value="newYork"/>
+                        <label for="newYork">New York, New York</label>
+                    </div>
+                    <div class="checkboxholder">
+                        <input class="checkbox sizetwo" type="checkbox" name="location" id="toronto" value="toronto"/>
+                        <label for="toronto">Toronto, Ontario</label>
+                    </div> 
+                    <div class="checkboxholder">
+                        <input class="checkbox sizetwo" type="checkbox" name="location" id="shanghai" value="shanghai"/>
+                        <label for="shanghai">Shanghai, China</label>
+                    </div>
+                    <div class="checkboxholder">
+                        <input class="checkbox sizetwo" type="checkbox" name="location" id="dublin" value="dublin"/>
+                        <label for="dublin">Dublin, Ireland</label>
+                    </div>
+                    <div class="checkboxholder">
+                        <input class="checkbox sizetwo" type="checkbox" name="location" id="hursley" value="hursley"/>
+                        <label for="hursley">Hursley, United Kingdom</label>
+                    </div>
+                    <div class="checkboxholder">
+                        <input class="checkbox sizetwo" type="checkbox" name="location" id="boeblingen" value="boeblingen"/>
+                        <label for="boeblingen">Boeblingen, Germany</label>
+                    </div>
+                    <div class="checkboxholder">
+                        <input class="checkbox sizetwo" type="checkbox" name="location" id="somewhereElse" value="somewhereElse"/>
+                        <label for="somewhereElse">Somewhere else</label>
+                    </div>                     
+                </div>
+            </div>
+        </div>
+        <!--section 3-->
+        <div id="portfolio">
+            <div class="sectiontitle">
+                3. Portfolio
+            </div>
+            <div class="line">
+                <p class="highline">Prove you're IBM next great designer by showing us who you are. What you've done. How you think. Tell us your story.</p>
+            </div>
+            <div class="line">
+                <input class="sizefour highline" type="text" name="portfolio" placeholder="Portfolio link*"/>
+            </div>
+            <div class="line">
+                <textarea rows="6" cols="500" placeholder="Anything else (another link, availability, etc.)?"></textarea>
+            </div>
+        </div> 
+        <!--section 4 - Submit-->
+        <div id="buttondiv">
+            <button id="submitButton" class="pointer">Submit</button>   
+        </div>
+    </body>
+</html>

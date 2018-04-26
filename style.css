@@ -1,0 +1,151 @@
+body {
+    width: 70%;
+    background-color: #454E57;
+    color: white;
+    margin: auto;
+    font-family: sans-serif;
+}
+header {
+    display: flex;
+    justify-content: center;
+}
+#maintitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.sectiontitle {
+    text-decoration: bold;
+    padding: 10px;
+    margin-top: 30px;
+    border-bottom: solid #05B0EE 2px;
+}
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px grey;
+    margin-top: 25px;
+    height: 30px;
+    color: white;
+}
+.subtext {
+    color: grey;
+    margin-top: 0;
+}
+.line {
+    display: flex;
+    justify-content: space-between;
+}
+.sizeone {
+    width: 23%;
+}
+.sizetwo {
+    width: 48%
+    justify-content: flex-start;
+}
+.sizethree {
+    width: 74%;
+}
+.sizefour {
+    width: 100%;
+}
+.highline {
+    margin-top: 50px;
+}
+textarea {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    vertical-align: top;
+    background-color: transparent;
+    color: grey;
+    border: solid 2px grey;
+}
+.checkbox {
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  margin:0;
+  vertical-align: bottom;
+  position: relative;
+  top: 9px;
+}
+.box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.smallbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 48%;
+}
+.checkboxholder {
+    display: flex;
+    align-items: flex-start;
+
+}
+#submitButton {
+    width: 15%;
+    height: 60px;
+    margin: 1px;
+    font-size: 18px;
+    background-color: #05B0EE;
+    color: white;
+    border: solid grey 1px;
+    cursor: pointer;
+}
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"] + label {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border: solid grey 1px;
+    cursor: pointer;
+}
+input[type="radio"]:checked + label {
+    background-color: #05B0EE;
+    border: solid grey 1px;
+}
+
+input[type="checkbox"] + label {
+    vertical-align: middle;
+    margin: 7px;
+    cursor: pointer;
+}
+input[type="checkbox"] {
+    display: none;
+    cursor: pointer;
+    border: solid red 2px;
+}
+#buttondiv {
+    margin-bottom: 50px;
+}
+input[type="checkbox"] + label:before {
+    content: '';
+    background-color: transparent;
+    border: solid grey 2px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 9px;
+    height: 9px;
+    padding: 1px;
+    margin-right: 10px;
+    text-align: center;    
+}
+input[type="checkbox"]:checked + label:before {
+    content: '';
+    background-color: #05B0EE;
+    border: solid grey 2px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 9px;
+    height: 9px;
+    padding: 1px;
+    margin-right: 10px;
+    text-align: center;    
+}
