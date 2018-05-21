@@ -20,12 +20,12 @@
                 1. Personal Information
             </div>
             <div id="inputone">
-                <input class="sizefour" type="text" name="fullName" placeholder="Full name*" required pattern="[a-zA-Z\s]+"/>
-                <input class="sizefour" type="email" name="email" placeholder="Email*" required/>
-                <input class="sizefour" type="email" name="re-enterEmail" placeholder="Re-enter email*" required/>
+                <input class="sizefour" type="text" name="fullName" placeholder="Full name*" required pattern="^[A-Za-z\s-]+$"/>
+                <input class="sizefour" type="email" name="email" placeholder="Email*" required pattern="^\w+@\w+?\.[a-zA-Z]{2,3}$" />
+                <input class="sizefour" type="email" name="re-enterEmail" placeholder="Re-enter email*" required pattern="^\w+@\w+?\.[a-zA-Z]{2,3}$"/>
             </div>
             <div>
-                <input class="sizefour" type="number" name="phone" placeholder="Phone*" required/>
+                <input class="sizefour" type="text" name="phone" placeholder="Phone*" required pattern="^[0-9\s\+\-]+$" />
             </div>
 
             <div class="fulline">
@@ -33,16 +33,16 @@
                 <input class="sizefour" type="text" name="address2"/>
             </div>
             <div id="smallone">
-                <input class="sizefour" type="text" name="city" placeholder="City*" required pattern="[a-zA-Z]+"/>
+                <input class="sizefour" type="text" name="city" placeholder="City*" required pattern="[a-zA-Z\s-]+"/>
             </div>
             <div id="smalltwo">
-                <input class="sizefour" type="text" name="state" placeholder="State" pattern="[a-zA-Z]+"/>
+                <input class="sizefour" type="text" name="state" placeholder="State" pattern="[a-zA-Z\s-]+"/>
             </div>
             <div id="smallthree">
-                <input class="sizefour" type="text" name="country" placeholder="Country/Region*" required pattern="[a-zA-Z]+"/>
+                <input class="sizefour" type="text" name="country" placeholder="Country/Region*" required pattern="[a-zA-Z\s-]+"/>
             </div>
             <div id="smallfour">
-                <input class="sizefour" type="text" name="zip" placeholder="Zip/Postal code"/>
+                <input class="sizefour" type="text" name="zip" placeholder="Zip/Postal code" pattern="[a-zA-Z\d-]+"/>
             </div>
             <div id="howdidyou" class="fulline">
                 <input class="sizefour highline" type="text" name="hearAboutUs" placeholder="How did you hear about us"/>
@@ -124,7 +124,7 @@
                     <p class="highline">Prove you're IBM next great designer by showing us who you are. What you've done. How you think. Tell us your story.</p>
                 </div>
                 <div class="fulline">
-                    <input class="sizefour highline" type="url" name="portfolio" placeholder="Portfolio link*" required />
+                    <input class="sizefour highline" type="text" name="portfolio" placeholder="Portfolio link*" required pattern="https?:\/\/(www\.)?[-\w@:%.\+~#=]{2,256}\.[a-z]{2,6}\b([-\w@:%\+.~#?&=\/]*)"/>
                 </div>
                 <textarea class="fulline" rows="6" placeholder="Anything else (another link, availability, etc.)?"></textarea>
             </div> 
