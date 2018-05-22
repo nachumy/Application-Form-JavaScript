@@ -2,12 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" href="style.css"/>
         <title>Application Form</title>
     </head>
     <body>
-        <form class="container">
+        <form id="form" class="container">
             <!--header-->
             <header>
                 <div id="maintitle">
@@ -20,29 +20,29 @@
                 1. Personal Information
             </div>
             <div id="inputone">
-                <input class="sizefour" type="text" name="fullName" placeholder="Full name*"/>
-                <input class="sizefour" type="text" name="email" placeholder="Email*"/>
-                <input class="sizefour" type="text" name="re-enterEmail" placeholder="Re-enter email*"/>
+                <input id="fullName" class="sizefour" type="text" name="fullName" placeholder="Full name*" required pattern="[a-zA-Z]{2,10}[\s][a-zA-Z]{2,}"/>
+                <input id="email1" class="sizefour" type="email" name="email" placeholder="Email*" required pattern="^\w+@\w+?\.[a-zA-Z]{2,3}$" />
+                <input id="email2" class="sizefour" type="email" name="re-enterEmail" placeholder="Re-enter email*" required pattern="^\w+@\w+?\.[a-zA-Z]{2,3}$"/>
             </div>
             <div>
-                <input class="sizefour" type="text" name="phone" placeholder="Phone*"/>
+                <input id="phone" class="sizefour" type="text" name="phone" placeholder="Phone*" required pattern="^[0-9\s\+\-]{8,}$" />
             </div>
 
             <div class="fulline">
-                <input class="sizefour highline" type="text" name="address" placeholder="Address*"/>
-                <input class="sizefour" type="text" name="address2"/>
+                <input id="address1" class="sizefour highline" type="text" name="address" placeholder="Address*" required pattern="^[\w\s#&-'.*]{8,}$" />
+                <input id="address2" class="sizefour" type="text" name="address2"/>
             </div>
             <div id="smallone">
-                <input class="sizefour" type="text" name="city" placeholder="City*"/>
+                <input id="city" class="sizefour" type="text" name="city" placeholder="City*" required pattern="^[\w\s'-.]{3,}$"/>
             </div>
             <div id="smalltwo">
-                <input class="sizefour" type="text" name="state" placeholder="State"/>
+                <input class="sizefour" type="text" name="state" placeholder="State" pattern="^[\w\s'-.]{3,}$"/>
             </div>
             <div id="smallthree">
-                <input class="sizefour" type="text" name="country" placeholder="Country/Region*"/>
+                <input id="country" class="sizefour" type="text" name="country" placeholder="Country/Region*" required pattern="^[\w\s'-.]{4,}$"/>
             </div>
             <div id="smallfour">
-                <input class="sizefour" type="text" name="zip" placeholder="Zip/Postal code"/>
+                <input id="zip" class="sizefour" type="text" name="zip" placeholder="Zip/Postal code" pattern="[\w-]{5,}"/>
             </div>
             <div id="howdidyou" class="fulline">
                 <input class="sizefour highline" type="text" name="hearAboutUs" placeholder="How did you hear about us"/>
@@ -79,7 +79,7 @@
                     </div>
                 </div>
                 <div class="smallbox">
-                    <p>Where are you interested in working?</p>
+                    <p>Where are you interested in working?*</p>
                     <p class="subtext">You must be legally authorized to work without visa sponsorship in the location(s) you choose.</p>              
                     <div class="checkboxholder">
                         <input class="checkbox sizetwo" type="checkbox" name="location" id="austin" value="austin"/>
@@ -124,14 +124,15 @@
                     <p class="highline">Prove you're IBM next great designer by showing us who you are. What you've done. How you think. Tell us your story.</p>
                 </div>
                 <div class="fulline">
-                    <input class="sizefour highline" type="text" name="portfolio" placeholder="Portfolio link*"/>
+                    <input id="portfolio" class="sizefour highline" type="text" name="portfolio" placeholder="Portfolio link*" required pattern="https?:\/\/(www\.)?[-\w@:%.\+~#=]{2,256}\.[a-z]{2,6}\b([-\w@:%\+.~#?&=\/]*)"/>
                 </div>
                 <textarea class="fulline" rows="6" placeholder="Anything else (another link, availability, etc.)?"></textarea>
             </div> 
             <!--section 4 - Submit-->
             <div id="buttondiv">
-                <button id="submitButton" class="pointer">Submit</button>
+                <button id="submitButton" type="submit" value="submit" class="pointer submit">Submit</button>
             </div>
         </form>
+        <script src="script.js"></script>
     </body>
 </html>
