@@ -7,7 +7,7 @@ class SectionTwo extends Component {
         super(props);
 
         this.state = {
-            discipline: "null",
+            discipline: null,
             experience: {
                 visualDesign: false,
                 uxDesign: false,
@@ -96,10 +96,15 @@ class SectionTwo extends Component {
         });
     }
 
+    isDisciplineEntered = () => {
+        const discipline = this.state.discipline;
+        return discipline === null;
+    }
+
     validate = (discipline, location) => {
         const errors = {
-            discipline: "null"
-                ? "Please select a discipline." 
+            discipline: this.isDisciplineEntered()
+                ? "Please select a discipline."
                 : "",
             location: this.isLocationEntered()
                 ? ""
