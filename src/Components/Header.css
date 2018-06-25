@@ -1,0 +1,10 @@
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+	padding-left: 0;
+}
+ul li a {
+    color: white;
+    text-decoration: none;
+}

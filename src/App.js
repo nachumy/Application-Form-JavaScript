@@ -1,24 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from "./Components/Header";
-import SectionOne from "./Components/SectionOne";
-import SectionTwo from "./Components/SectionTwo";
-import SectionThree from "./Components/SectionThree";
-import Footer from "./Components//Footer";
+import Form from "./Components/Form"
+import Footer from "./Components/Footer";
 import './App.css';
 
 const App = (props) => {
     return (
-        <div className="container">
+        <div>
             <Header />
 
-            <SectionOne />
-
-            <SectionTwo />
-
-            <SectionThree />
+            <Form />
 
             <Footer />
-            
         </div>
     );
 }

@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import './Footer.css';
+import React from "react";
+import "./Footer.css";
 
 const Footer = (props) => {
     return (
         <footer>
-        	<p>Footer</p>
+        	<p>Copyright Ⓒ 2018</p>
         </footer>
     );
 }
